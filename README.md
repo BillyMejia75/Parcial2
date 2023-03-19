@@ -1,2 +1,2 @@
 # Parcial2
-App de restaturante
+App de restaurante
