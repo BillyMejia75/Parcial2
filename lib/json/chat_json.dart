@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
 const List profile = [
-    {
+  {
     "name": "Billy Mejia    25-1130-2019",
+    "img":
+        "https://images.pexels.com/photos/1851243/pexels-photo-1851243.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "name": "Jeremias Escobar 25-3712-2019",
     "img":
         "https://images.pexels.com/photos/1851243/pexels-photo-1851243.jpeg?auto=compress&cs=tinysrgb&w=400"
   }

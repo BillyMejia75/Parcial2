@@ -32,7 +32,7 @@ class _PrincipalState extends State<Principal> {
         Recipes(),
         FormPlans(),
         Groceries(),
-        Account(),
+        Account(),              
       ],
     );
   }
@@ -42,7 +42,7 @@ class _PrincipalState extends State<Principal> {
       Icons.food_bank,
       Icons.menu,
       LineIcons.shoppingCart,
-      LineIcons.userCircleAlt
+      LineIcons.userCircleAlt,
     ];
     List textoItems = [
       "Recipes",
@@ -50,17 +50,18 @@ class _PrincipalState extends State<Principal> {
       "Groceries",
       "Account"
     ];
-    return Container(
+
+    return Container(      
       height: 90,
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20, top: 5),
+        padding: const EdgeInsets.only(left: 20, right: 20, top: 5),        
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20, top: 5),
           child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: List.generate(textoItems.length, (index) {
-                return GestureDetector(
+                return GestureDetector(                  
                   onTap: () {
                     setState(() {
                       paginaIndex = index;
@@ -82,13 +83,13 @@ class _PrincipalState extends State<Principal> {
                               fontSize: 10,
                               color: paginaIndex == index
                                   ? primary
-                                  : white.withOpacity(0.5))),
+                                  : white.withOpacity(0.5))),                           
                     ],
                   ),
                 );
               })),
         ),
       ),
-    );
+    );    
   }
 }

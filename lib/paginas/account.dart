@@ -54,7 +54,7 @@ class _AccountState extends State<Account> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Cuenta",
+                "Cuentas",
                 style: TextStyle(
                     fontSize: 23, color: white, fontWeight: FontWeight.bold),
               ),
@@ -138,7 +138,90 @@ class _AccountState extends State<Account> {
                           width: 10,
                         ),
                       ],
-                    )
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ),
+        ///////////////////////////
+        ///
+        SizedBox(
+          height: 30,
+        ),
+        Container(
+          height: 80,
+          width: double.infinity,
+          decoration: BoxDecoration(color: textfieldColor),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          child: Stack(
+                            children: [
+                              Container(
+                                width: 70,
+                                height: 70,
+                                decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    image: DecorationImage(
+                                        image: NetworkImage(profile[1]['img']),
+                                        fit: BoxFit.cover)),
+                              ),
+                              /*Positioned(
+                                right: 5,
+                                bottom: 0,
+                                child: Container(
+                                  width: 20,
+                                  height: 20,
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle, color: primary),
+                                  child: Center(
+                                    child: Icon(
+                                      Icons.add,
+                                      color: white,
+                                      size: 18,
+                                    ),
+                                  ),
+                                ),
+                              )*/
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              profile[1]['name'],
+                              style: TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.w600,
+                                  color: white),
+                            ),
+                            SizedBox(
+                              height: 3,
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                      ],
+                    ),
                   ],
                 )
               ],
